@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mi Landing sencilla</title>
+</head>
+<body>
+
+  <header>
+    <h1>Hola, somos TuProducto</h1>
+    <p>Hacemos tu vida más sencilla. Aquí puedes conocernos y registrarte.</p>
+
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#planes">Planes</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#login">Login</a></li>
+        <li><a href="#registro">Registro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section>
+      <h2>Resumen rápido</h2>
+      <p>Una frase clara sobre lo que hacemos y por qué te interesa.</p>
+      <a href="#registro"><button type="button">Crear cuenta</button></a>
+      <a href="#contacto"><button type="button">Escríbenos</button></a>
+    </section>
+
+    <section id="galeria">
+      <h2>Galería (carrusel)</h2>
+      <p>Sube imágenes para el carrusel abajo.</p>
+
+      <form action="#" method="post" enctype="multipart/form-data" aria-label="Subir imágenes">
+        <label for="imgs">Elegir imágenes:</label>
+        <input id="imgs" name="imgs[]" type="file" accept="image/*" multiple>
+        <button type="submit">Subir</button>
+      </form>
+
+      <figure>
+        <img src="img1.jpg" alt="Imagen ejemplo 1">
+        <figcaption>Imagen 1</figcaption>
+      </figure>
+      <figure>
+        <img src="img2.jpg" alt="Imagen ejemplo 2">
+        <figcaption>Imagen 2</figcaption>
+      </figure>
+    </section>
+
+    <section id="planes">
+      <h2>Planes</h2>
+      <ul>
+        <li>
+          <h3>Básico</h3>
+          <p>Para probar.</p>
+          <a href="#registro"><button type="button">Elegir</button></a>
+        </li>
+        <li>
+          <h3>Pro</h3>
+          <p>Para crecer.</p>
+          <a href="#contacto"><button type="button">Pedir demo</button></a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form action="#" method="post" aria-label="Contacto">
+        <label for="c-nombre">Nombre</label>
+        <input id="c-nombre" name="nombre" type="text" required>
+        <label for="c-email">Correo</label>
+        <input id="c-email" name="email" type="email" required>
+        <label for="c-mensaje">Mensaje</label>
+        <textarea id="c-mensaje" name="mensaje" rows="3"></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <aside>
+    <h2>Sidebar</h2>
+    <p>Accesos rápidos y noticias cortas.</p>
+    <ul>
+      <li><a href="#galeria">Ver galería</a></li>
+      <li><a href="#planes">Ver planes</a></li>
+      <li><a href="#contacto">Soporte</a></li>
+    </ul>
+
+    <section>
+      <h3>Suscríbete</h3>
+      <form action="#" method="post" aria-label="Suscripción">
+        <label for="s-email">Correo</label>
+        <input id="s-email" name="email" type="email" required>
+        <button type="submit">Suscribir</button>
+      </form>
+    </section>
+  </aside>
+
+  <section id="login">
+    <h2>Iniciar sesión</h2>
+    <form action="#" method="post" aria-label="Login">
+      <label for="u-user">Usuario o correo</label>
+      <input id="u-user" name="user" type="text" required>
+      <label for="u-pass">Contraseña</label>
+      <input id="u-pass" name="password" type="password" required>
+      <button type="submit">Entrar</button>
+    </form>
+  </section>
+
+  <section id="registro">
+    <h2>Registro</h2>
+    <form action="#" method="post" aria-label="Registro">
+      <label for="r-nombre">Nombre</label>
+      <input id="r-nombre" name="nombre" type="text" required>
+      <label for="r-email">Correo</label>
+      <input id="r-email" name="email" type="email" required>
+      <label for="r-user">Usuario</label>
+      <input id="r-user" name="usuario" type="text" required>
+      <label for="r-pass">Contraseña</label>
+      <input id="r-pass" name="password" type="password" required>
+      <label for="r-rol">Tipo</label>
+      <select id="r-rol" name="rol">
+        <option value="usuario">Usuario</option>
+        <option value="empresa">Empresa</option>
+      </select>
+      <div>
+        <input id="r-acepto" name="acepto" type="checkbox" required>
+        <label for="r-acepto">Acepto términos</label>
+      </div>
+      <button type="submit">Crear cuenta</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Mi Producto · Calle Falsa 123 · correo@ejemplo.com</p>
+    <p>© <time datetime="2025-10-24">2025</time> · Gracias por visitarnos</p>
+  </footer>
+
+</body>
+</html>
